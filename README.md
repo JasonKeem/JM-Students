@@ -1,6 +1,6 @@
 # Junior Astronaut Mission Trainer
 
-NASA Space Apps Challenge 팀의 Phaser 4 게임 시작점입니다. 현재 화면은 **프로토타입**으로, 우주비행사를 이동시키고 세 훈련 장치를 점검할 수 있습니다. 캐릭터 그림과 실제 임무 데이터는 아직 적용하지 않았습니다.
+NASA Space Apps Challenge 팀의 Phaser 4 게임 시작점입니다. 현재 화면은 **프로토타입**으로, Nova를 이동시키고 세 훈련 장치를 점검할 수 있습니다. Nova 캐릭터 그림을 적용했으며, 실제 임무 데이터는 아직 적용하지 않았습니다.
 
 ## Codespaces에서 실행
 

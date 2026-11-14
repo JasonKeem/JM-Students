@@ -12,6 +12,10 @@ const stations = [
 class TrainingScene extends Phaser.Scene {
   constructor() { super('Training'); }
 
+  preload() {
+    this.load.image('nova', '/assets/nova.png');
+  }
+
   create() {
     this.completed = new Set();
     this.cameras.main.setBackgroundColor('#080f20');
@@ -47,13 +51,9 @@ class TrainingScene extends Phaser.Scene {
       fontFamily: 'sans-serif', fontSize: '19px', color: '#eaf5ff',
     }).setOrigin(0.5);
 
-    this.astronaut = this.add.container(110, 407);
-    const suit = this.add.graphics();
-    suit.fillStyle(0xe9f2f4).fillRoundedRect(-15, -19, 30, 42, 10);
-    suit.fillStyle(0xe9f2f4).fillCircle(0, -31, 20);
-    suit.fillStyle(0x51b9cc).fillRoundedRect(-15, -40, 30, 18, 8);
-    suit.fillStyle(0x406b85).fillRect(-11, -13, 22, 8);
-    this.astronaut.add(suit);
+    this.astronaut = this.add.image(110, 407, 'nova')
+      .setDisplaySize(68, 102)
+      .setOrigin(0.5, 0.75);
 
     this.keys = this.input.keyboard.addKeys('W,A,S,D,UP,DOWN,LEFT,RIGHT,E,R');
     this.keys.E.on('down', () => this.interact());
