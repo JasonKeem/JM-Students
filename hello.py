@@ -1,3 +1,1 @@
-import sys
-
-sys.stdout.write("hellow rold\n")
+print("Hello World")
